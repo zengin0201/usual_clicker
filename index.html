@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS Уроки: DOM</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+    <div id="kliker-app"
+        style="background: #222; color: #fff; padding: 30px; border-radius: 20px; width: 350px; text-align: center; font-family: 'Arial', sans-serif; border: 4px solid #444;">
+
+        <h1>💰 <span id="schetchik">0</span></h1>
+        <p>Денег в секунду: <span id="dohod-v-sekundu">0</span></p>
+
+        <button id="glavnaya-knopka"
+            style="background: gold; border: none; border-radius: 50%; width: 150px; height: 150px; font-size: 50px; cursor: pointer; box-shadow: 0 10px 0 #b8860b; active: transform 0.1s; margin: 20px 0;">
+            🪙
+        </button>
+
+        <hr style="border: 1px solid #444; margin: 20px 0;">
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button id="kupit-uluchshenie" style="padding: 10px; cursor: pointer;">
+                🦾 Сильный клик (+1) — Цена: <span id="tsena-uluchsheniya">10</span>
+            </button>
+            <button id="kupit-avtoklik" style="padding: 10px; cursor: pointer;">
+                🤖 Авто-майнер (+1/сек) — Цена: <span id="tsena-avtoklika">50</span>
+            </button>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
